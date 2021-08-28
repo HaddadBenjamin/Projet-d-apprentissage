@@ -12,23 +12,23 @@ export const initialTodosState : TodoState =
     error : undefined,
     todos : [
     { 
-        id : "1", 
-        content : "Faire le ménage",
+        id : "1",
+        title : "Faire le ménage",
         completed : true,
     },
     { 
-        id : "2", 
-        content : "Faire ma compta",
+        id : "2",
+        title : "Faire ma compta",
         completed : true,
     },
     { 
         id : "3", 
-        content : "Appeler Marine",
+        title : "Appeler Marine",
         completed : false,
     },
     { 
-        id : "4", 
-        content : "Acheter des croquettes pour petit chien",
+        id : "4",
+        title : "Acheter des croquettes pour petit chien",
         completed : false,
     },
 ]}

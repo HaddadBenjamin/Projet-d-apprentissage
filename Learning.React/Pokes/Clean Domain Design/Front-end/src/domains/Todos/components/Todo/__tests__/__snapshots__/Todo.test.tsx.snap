@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todo should match snapshot 1`] = `
+<div>
+  <div
+    class="todo"
+  >
+    <div>
+      <input
+        class="toggle"
+        type="checkbox"
+      />
+      <input
+        class="content"
+        value="Faire le ménage"
+      />
+    </div>
+    <div
+      class="removeButton"
+    >
+      X
+    </div>
+  </div>
+</div>
+`;

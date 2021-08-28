@@ -5,7 +5,7 @@ import { editTodoRequestAction, removeTodoRequestAction, toggleTodoRequestAction
 import { useDispatch } from 'react-redux';
 import styles from './Todo.module.scss'
 
-const Todo : FC<ITodo> = ({ id, content, completed }) =>
+const Todo : FC<ITodo> = ({ id, title, completed }) =>
 {
     const dispatch = useDispatch()
 
@@ -16,7 +16,7 @@ const Todo : FC<ITodo> = ({ id, content, completed }) =>
     return <div className={styles.todo}>
         <div>
             <input type="checkbox" checked={completed} onChange={onChecked} className={styles.toggle}/>
-            <input className={styles.content} defaultValue={content} onChange={onChangeTitle}/>
+            <input className={styles.content} defaultValue={title} onChange={onChangeTitle}/>
         </div>
         <div className={styles.removeButton} onClick={onRemove}>X</div>
     </div>

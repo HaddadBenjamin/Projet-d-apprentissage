@@ -1,6 +1,6 @@
 export interface ITodo
 {
     id : string
-    content : string
+    title : string
     completed : boolean
 }

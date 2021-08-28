@@ -10,11 +10,7 @@ const AddTodo : FC = () => {
     const [title, setTitle] = useState('')
     const dispatch = useDispatch()
 
-    const addTodoInContextAndModel = () => dispatch(addTodoRequestAction({
-        id: newGuid(),
-        content: title,
-        completed: false
-    }))
+    const addTodoInContextAndModel = () => dispatch(addTodoRequestAction(title))
 
     const onChangeTodo = (event: ChangeEvent<HTMLInputElement>) : void =>
         setTitle(event.target.value)

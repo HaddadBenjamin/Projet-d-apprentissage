@@ -4,6 +4,7 @@ import { addTodo, getAllTodos, patchTitle, removeTodo, patchCompleted } from './
 import { ITodo } from './todos.model';
 import { selectTodos } from './todos.selector';
 import { TodoState } from './todos.state';
+import {createTodo} from "./todos.repository";
 
 function* getAllTodosSaga(action : GetTodosRequestAction)
 {
@@ -22,7 +23,7 @@ function* addTodoSaga(action : AddTodoRequestAction)
 {
    try
    {
-      const newTodo : ITodo = yield call(addTodo, action.payload);
+      const newTodo : ITodo = yield call(addTodo, createTodo(action.payload.title));
       yield put(addTodoSuccessAction(newTodo));
    }
    catch (error)

@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todos should match snapshot 1`] = `
+<div>
+  <h1
+    class="title"
+  >
+    Todo List
+  </h1>
+  <div
+    class="container"
+  >
+    <div
+      class="todo"
+    >
+      <div>
+        <input
+          class="toggle"
+          type="checkbox"
+        />
+        <input
+          class="content"
+          value="Faire le ménage"
+        />
+      </div>
+      <div
+        class="removeButton"
+      >
+        X
+      </div>
+    </div>
+    <div
+      class="todo"
+    >
+      <div>
+        <input
+          checked=""
+          class="toggle"
+          type="checkbox"
+        />
+        <input
+          class="content"
+          value="Faire ma compta"
+        />
+      </div>
+      <div
+        class="removeButton"
+      >
+        X
+      </div>
+    </div>
+    <div
+      class="todo"
+    >
+      <div>
+        <input
+          class="toggle"
+          type="checkbox"
+        />
+        <input
+          class="content"
+          value="Appeler Marine"
+        />
+      </div>
+      <div
+        class="removeButton"
+      >
+        X
+      </div>
+    </div>
+    <div
+      class="todo"
+    >
+      <div>
+        <input
+          class="toggle"
+          type="checkbox"
+        />
+        <input
+          class="content"
+          value="Acheter des croquettes pour petit chien"
+        />
+      </div>
+      <div
+        class="removeButton"
+      >
+        X
+      </div>
+    </div>
+    <div
+      class="todo"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class="addButton"
+        >
+          +
+        </div>
+        <input
+          class="input"
+          placeholder="Ajouter une tâche"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
